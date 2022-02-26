@@ -1,9 +1,30 @@
 package br.edu.utfpr.commerce.model.local;
 
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table(name = "tb_cidade")
 public class Cidade {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+    
+    @Column(name = "nome", length = 150, nullable = false)
     private String nome;
+    
+   @ManyToOne(cascade = CascadeType.PERSIST)
+   @JoinColumn(name = "estado_id")
     private Estado estado;
 
     public Cidade() {

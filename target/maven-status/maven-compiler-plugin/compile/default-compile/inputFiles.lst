@@ -1,17 +1,17 @@
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\App.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\Produto.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\ContaReceber.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\Usuario.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\Pessoa.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\Categoria.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\PessoaFisica.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\TipoUsuario.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\Estoque.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\local\Cidade.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\local\Pais.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\local\Estado.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\Marca.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\Filial.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\PessoaJuridica.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\NotaFiscal.java
-D:\git\github\utcapacita\poo\app-nf\src\main\java\br\edu\utfpr\commerce\model\local\Endereco.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\App.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\NotaFiscal.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\Produto.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\local\Estado.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\PessoaFisica.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\Categoria.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\local\Cidade.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\Usuario.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\Pessoa.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\Estoque.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\Filial.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\PessoaJuridica.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\local\Pais.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\TipoUsuario.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\ContaReceber.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\local\Endereco.java
+C:\Users\User\Desktop\Nova pasta\app-nf\src\main\java\br\edu\utfpr\commerce\model\Marca.java
