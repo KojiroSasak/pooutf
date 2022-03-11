@@ -8,6 +8,9 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
+import jakarta.persistence.Query;
+import jakarta.persistence.TypedQuery;
+import java.util.List;
 
 public class App {
 
@@ -31,6 +34,9 @@ public class App {
              em.persist(medianeira); //Persistindo a cidade de Medianeira 
              
              
+             em.persist(new Pais("Paraguay", "PY"));
+             em.persist(new Pais("Argentina", "AR"));
+             
               transaction.commit(); //Efetivando as alterações do DB
         }catch(Exception e){    
             System.out.println("Falha ao executar transação:  "  +  e.getMessage());
@@ -45,5 +51,26 @@ public class App {
        // Pessoa juca = new PessoaFisica("Juca", e, "00011122233344", "12345");
 
         //System.out.println(juca);
+        
+        
+        //Exemplos de consulta no banco de Dados
+        
+        //JPQL
+        Query query1 = em.createQuery("SELECT p FROM Pais p");
+        List<Pais> paises = query1.getResultList();
+        System.out.println(paises);
+        
+        TypedQuery<Pais> query2 = em.createQuery("SELECT p FROM Pais p WHERE p.sigla = 'PY' ", Pais.class);
+        Pais py =  query2.getSingleResult();
+        System.out.println(py);
+        
+        TypedQuery<Long> query3 = em.createNamedQuery("Pais.count", Long.class);
+        Long qtd = query3.getSingleResult();
+        System.out.println("Total de paises: " +qtd);
+        
+         TypedQuery<Pais> query4 = em.createNamedQuery("Pais.getBySigla", Pais.class);
+         query4.setParameter("sigla","AR");
+        Pais ar = query4.getSingleResult();
+        System.out.println(ar);
     }
 }

@@ -1,11 +1,35 @@
 package br.edu.utfpr.commerce.model.local;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="endereco")
 public class Endereco {
     // Atributos
+     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private String logradouro;
+     
+     
+    @Column(name = "numero")
     private String numero;
+      
+       
+    @Column(name = "bairro")
     private String bairro;
+       
+       
+    @Column(name = "cidade")
     private Cidade cidade;
+        
+       
+    @Column(name = "cep")
     private String cep;
 
     // Construtores

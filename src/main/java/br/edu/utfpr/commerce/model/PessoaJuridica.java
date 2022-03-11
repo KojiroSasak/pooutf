@@ -1,13 +1,23 @@
 package br.edu.utfpr.commerce.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 
 @Entity
 @Table(name = "tb_pessoa_juridica")
 public class PessoaJuridica extends Pessoa {
+    
+     
+    @Column(name = "cnpj")
     private String cnpj;
+    
+    
+    @Column(name = "inscricao_estadual")
     private String inscricaoEstadual;
 
     public PessoaJuridica() {

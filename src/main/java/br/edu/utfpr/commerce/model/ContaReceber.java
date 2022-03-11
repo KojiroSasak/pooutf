@@ -1,5 +1,11 @@
 package br.edu.utfpr.commerce.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.util.Calendar;
 
 /**
@@ -7,12 +13,27 @@ import java.util.Calendar;
  * 
  * @author Sobjak
  */
+@Entity
+@Table(name = "tb_conta_receber")
 public class ContaReceber {
+     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+     
+    @Column(name = "numero_parcela")
     private Integer numeroParcela;
+      
+      
+    @Column(name = "total_parcelas")
     private Integer totalParcelas;
+       
+      
+    @Column(name = "id")
     private Calendar dataEmissao;
     private Calendar dataVencimento;
+    
+    @Column(name = "id")
     private float valor;
     private Calendar dataPagamento;
     private Filial filial;

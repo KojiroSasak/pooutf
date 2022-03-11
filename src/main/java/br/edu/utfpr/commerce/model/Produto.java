@@ -1,19 +1,55 @@
 package br.edu.utfpr.commerce.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name="tb_produto")
 public class Produto {
 
+     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+     
+    
+    @Column(name = "nome")
     private String nome;
+      
+      
+    @Column(name = "descricao")
     private String descricao;
+       
+       
+    @Column(name = "unidade_medida")
     private String unidadeMedida;
+        
+   
+    @Column(name = "percentual_ipi")
     private Float percentualIpi;
+         
+      
+    @Column(name = "valor_unitario")
     private Float valorUnitario;
+          
+         
+    @Column(name = "prso_liquido")
     private Float pesoLiquido;
+           
+            
+    @Column(name = "peso_bruto")
     private Float pesoBruto;
+            
+    @Column(name = "marca")
     private Marca marca;
+             
+             
     private Categoria categoria;
     private List<Estoque> estoques = new ArrayList<>();
 

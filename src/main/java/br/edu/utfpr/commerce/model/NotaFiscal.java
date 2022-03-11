@@ -1,21 +1,52 @@
 package br.edu.utfpr.commerce.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+@Entity
+@Table(name="tb_nota_fiscal")
 public class NotaFiscal {
 
+     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+     
+    @Column(name = "chave_acesso")
     private String chaveAcesso;
     private Calendar dataEmissao;
+    
+     @Column(name = "numero")
     private String numero;
     private Calendar dataSaida;
+    
+     
+    @Column(name = "valor_frete")
     private float valorFrete;
+     
+     
+    @Column(name = "valor_seguro")
     private float valorSeguro;
+      
+     
+    @Column(name = "valor_desconto")
     private float valorDesconto;
+       
+    @Column(name = "valor_outas_despesas")
     private float valorOutrasDespesas;
+    
+   
+    @Column(name = "observacao")
     private String observacao;
+    
+    
     private Filial filial;
     private Pessoa pessoa;
     private List<Produto> itens = new ArrayList<>();
